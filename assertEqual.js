@@ -5,6 +5,7 @@ const assertEqual = function(actual, expected){
     return console.log('Assertion Failed: "' + actual + '" !== "' + expected + '"')
   }
 };
+// comments to push to github
 
 assertEqual('Lighthouse Labs', 'Bootcamp');
 assertEqual(1,1)
