@@ -6,19 +6,17 @@ function assertEqual(actual, expected){
     return console.log('Assertion Failed: "' + actual + '" !== "' + expected + '"')
   }
 };
-
 function eqArrays(arr1,arr2){
   if(arr1.length !== arr2.length){
-    return false
+    return console.log(arr1 + ' !== ' + arr2)
   } else {
     for(let i = 0; i < arr1.length; i++){
       if(arr1[i] !== arr2[i]){
-        return false
+        return console.log(arr1 + ' !== ' + arr2)
       }
     }
-    return true
+    return console.log(arr1 + ' === ' + arr2)
   }
 }
 
-assertEqual(eqArrays([1,2,3],[1,2,3]), true); // should return true
-assertEqual(eqArrays([1,2,3],[1,"2",3]), true); //should return false
+eqArrays(input[0],input[1]) // should return true
