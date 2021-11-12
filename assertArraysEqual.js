@@ -1,11 +1,5 @@
 const input = process.argv.slice(2);
-function assertEqual(actual, expected){
-  if(actual === expected){
-    return console.log('Assertion Passed: ' + actual + ' === ' + expected)
-  } else {
-    return console.log('Assertion Failed: "' + actual + '" !== "' + expected + '"')
-  }
-};
+
 function eqArrays(arr1,arr2){
   if(arr1.length !== arr2.length){
     return console.log(arr1 + ' !== ' + arr2)
