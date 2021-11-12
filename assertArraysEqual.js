@@ -1,6 +1,6 @@
 const input = process.argv.slice(2);
 
-function eqArrays(arr1,arr2){
+function assertArraysEqual(arr1,arr2){
   if(arr1.length !== arr2.length){
     return console.log(arr1 + ' !== ' + arr2)
   } else {
