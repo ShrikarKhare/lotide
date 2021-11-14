@@ -13,13 +13,13 @@ const bestTVShowsByGenre = {
 };
 
 function findKeyByValue(obj, val){
-  var keys = Object.keys(obj)
+  var keys = Object.keys(obj);
   for(i of keys){
     if(obj[i] === val){
-      return i
-    }
-  }
-}
+      return i;
+    };
+  };
+};
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
