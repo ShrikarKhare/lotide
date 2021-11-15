@@ -12,5 +12,5 @@ function assertArraysEqual(arr1,arr2){
     return console.log(arr1 + ' === ' + arr2)
   }
 }
-
+//
 eqArrays(input[0],input[1]) // should return true
