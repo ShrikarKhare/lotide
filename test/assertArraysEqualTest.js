@@ -1,2 +1,3 @@
 const assertArraysEqual = require('../assertArraysEqual');
-assertArraysEqual(input[0],input[1]) // should return true
+assertArraysEqual([1,2,3],[1,2,3]); // should return true
+// console.log(assertArraysEqual([1,2,3],[1,2,3]));
