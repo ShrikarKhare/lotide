@@ -1,5 +1,5 @@
 const input = process.argv.slice(2);
-const eqArrays = require('./eqArrays');
+
 const assertArraysEqual = (arr1,arr2) =>{
   if(arr1.length !== arr2.length){
     return console.log(arr1 + ' !== ' + arr2)
@@ -12,6 +12,5 @@ const assertArraysEqual = (arr1,arr2) =>{
     return console.log(arr1 + ' === ' + arr2)
   }
 }
-// console.log(eqArrays(input[0],input[1])) // should return true
 
 module.exports = assertArraysEqual;

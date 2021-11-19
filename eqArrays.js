@@ -1,5 +1,4 @@
 const input = process.argv.slice(2);
-const assertEqual = require('./assertEqual');
 
 const eqArrays = (arr1,arr2) =>{
   if(arr1.length !== arr2.length){
