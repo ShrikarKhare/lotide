@@ -1,13 +1,7 @@
 const input = process.argv.slice(2);
-function assertEqual(actual, expected){
-  if(actual === expected){
-    return console.log('Assertion Passed: ' + actual + ' === ' + expected)
-  } else {
-    return console.log('Assertion Failed: "' + actual + '" !== "' + expected + '"')
-  }
-};
+const assertEqual = require('./assertEqual');
 
-function eqArrays(arr1,arr2){
+const eqArrays = (arr1,arr2) =>{
   if(arr1.length !== arr2.length){
     return false
   } else {
@@ -19,6 +13,4 @@ function eqArrays(arr1,arr2){
     return true
   }
 }
-
-assertEqual(eqArrays([1,2,3],[1,2,3]), true); // should return true
-assertEqual(eqArrays([1,2,3],[1,"2",3]), true); //should return false
+module.exports = eqArrays;
