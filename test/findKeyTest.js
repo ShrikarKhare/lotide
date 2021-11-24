@@ -10,12 +10,11 @@ let testObject = {
     "Akelarre":  { stars: 3 }
 };
 
-
 describe('#findKey', ()=> {
     it('should return noma for 2 stars', () => {
-      assert.strictEqual(findKey(testObject, x => x.stars === 2),'noma');
+        assert.strictEqual(findKey(testObject, x => x.stars === 2),'noma');
     });
     it('should return Ora for 21 stars', () => {
         assert.strictEqual(findKey(testObject, x => x.stars === 21),'Ora');
-      });
+    });
 });
