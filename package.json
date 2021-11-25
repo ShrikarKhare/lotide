@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@shrikark/lotide",
+  "version": "1.0.1",
+  "description": "lodash copy for academic purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ShrikarKhare/lotide.git"
   },
-  "author": "",
+  "author": "@shrikark",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ShrikarKhare/lotide/issues"
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/ShrikarKhare/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.4",
+    "eslint": "^8.3.0",
     "mocha": "^9.1.3"
   }
 }
